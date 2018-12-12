@@ -25,7 +25,7 @@ First we're going to create the model for the contact form by adding a new class
 Build your solution after adding the model.
 
 ### Creating the view
-Next we add the view for the form to the `/View/Partials` folder. Because we've added the model and built the solution we can add it as a strongly typed view.
+Next we add the view for the form to the `/Views/Partials` folder. Because we've added the model and built the solution we can add it as a strongly typed view.
 
 The view can be built with standard MVC helpers:
 
@@ -73,7 +73,7 @@ Finally we're going to add the controller. Simply add a controller to the `/Cont
         }
     }
 
-If the model state is invalid `CurrentUmbracoPage()` will send the user back to the form. If valid you can work with the form data (e.g. sending an email to site admin) and them `RedirectToCurrentUmbracoPage();`
+If the model state is invalid `CurrentUmbracoPage()` will send the user back to the form. If valid you can work with the form data (e.g. sending an email to site admin) and then `RedirectToCurrentUmbracoPage();`
 
 ## Adding the form to a template
 You can add the form to a template by rendering the partial view:
